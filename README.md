@@ -21,3 +21,4 @@ Key aspects of the strategy:
 Distance-Based Adjustment: Each robot continuously detects the distance to its assigned flag and adjusts its speed accordingly, stopping when the flag is reached.
 Open-Loop Control: The solution does not account for changes in flag positions during execution, relying solely on the initial configuration.
 While effective for static environments, this approach may fail in dynamic scenarios where flag positions change during the program's runtime.
+

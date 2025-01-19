@@ -1,4 +1,4 @@
-# Mission_coordination lab , assisted by JIOKENG I TOKO Jean Junior Maldini & MAHIR Cavvas, 2025
+# Mission_coordination lab , Done by JIOKENG I TOKO Jean Junior Maldini & MAHIR Cavvas, 2025
 Simulating efficient and collision-free movement of multiple robots
 
 # Objective

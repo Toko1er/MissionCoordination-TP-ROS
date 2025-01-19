@@ -2,7 +2,7 @@
 Simulating efficient and collision-free movement of multiple robots
 
 # Objective
-The goal is to navigate three robots from their starting positions to their designated flags while:
+The goal of this project is to navigate three robots from their starting positions to their designated flags while:
 
 Avoiding collisions with other robots.
 Reaching their respective flags as quickly as possible.

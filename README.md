@@ -52,3 +52,6 @@ If the robot moves away from the flag, it executes corrective turns to realign i
 As the robot nears the flag (distance < 2), it gradually stops to prevent overshooting.
 ### Dynamic Adjustments:
 The PID controller ensures the robot's speed and direction adapt seamlessly to changing positional errors.
+
+https://github.com/user-attachments/assets/c33769b6-d5a3-4d03-9f94-a9d3171ccee3
+

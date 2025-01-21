@@ -22,6 +22,9 @@ Distance-Based Adjustment: Each robot continuously detects the distance to its a
 Open-Loop Control: The solution does not account for changes in flag positions during execution, relying solely on the initial configuration.
 While effective for static environments, this approach may fail in dynamic scenarios where flag positions change during the program's runtime.
 
+https://github.com/user-attachments/assets/9019b11d-e19c-481a-9b77-1b3f530ac56f
+
+
 ## 2. Curve Avoiding
 
 This strategy employs a combination of PID control and obstacle avoidance to navigate a robot to its designated flag in a simulated environment. The robot begins by calculating its distance to the flag and uses a PID controller to adjust its speed and direction dynamically based on positional errors and yaw angles including:
@@ -35,3 +38,17 @@ The PID controller minimizes errors in distance and direction to ensure smooth n
 ### Open-Loop Behavior:
 While the robot dynamically adjusts speed and angle, the position of the flag is fixed throughout the execution. Any dynamic changes to the environment may reduce efficiency.
 
+https://github.com/user-attachments/assets/e54605f5-1782-41b9-a26b-7dcac73eb4de
+
+## 3. Stop checking Avoidance
+This strategy provides an effective approach for guiding a robot to its target flag while avoiding obstacles. A PID controller is used to dynamically adjust the robot's speed based on its distance to the flag, ensuring smooth and controlled movement. The yaw angle is also managed through the PID controller to maintain proper alignment with the target.
+Key features of the strategy include:
+
+### Obstacle Detection:
+Using an ultrasonic sensor, the robot identifies nearby obstacles. If an obstacle is detected, the robot halts and adjusts its orientation to avoid collisions.
+### Course Correction:
+If the robot moves away from the flag, it executes corrective turns to realign its trajectory.
+### Safe Stopping:
+As the robot nears the flag (distance < 2), it gradually stops to prevent overshooting.
+### Dynamic Adjustments:
+The PID controller ensures the robot's speed and direction adapt seamlessly to changing positional errors.

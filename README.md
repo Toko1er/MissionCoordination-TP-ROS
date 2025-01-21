@@ -13,7 +13,7 @@ Awareness: Real-time knowledge of their current position and orientation in the 
 This simulation showcases multi-robot coordination and navigation techniques in a controlled environment..
 
 # Approach
-1. Time Delay Strategy
+## 1. Time Delay Strategy
 
 To ensure the robots move to their respective flags without collisions, a time-delay strategy is implemented. By staggering the start time of each robot, their movements are coordinated, reducing the risk of collisions.
 
@@ -22,7 +22,7 @@ Distance-Based Adjustment: Each robot continuously detects the distance to its a
 Open-Loop Control: The solution does not account for changes in flag positions during execution, relying solely on the initial configuration.
 While effective for static environments, this approach may fail in dynamic scenarios where flag positions change during the program's runtime.
 
-2. Curve Avoiding
+## 2. Curve Avoiding
 
 This strategy employs a combination of PID control and obstacle avoidance to navigate a robot to its designated flag in a simulated environment. The robot begins by calculating its distance to the flag and uses a PID controller to adjust its speed and direction dynamically based on positional errors and yaw angles including:
 
